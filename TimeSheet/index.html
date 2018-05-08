@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Employee Timesheet
+        </title>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Slabo+27px" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar fixed-top navbar-dark bg-dark mb-3">
+                <a class="navbar-brand" href="#">Employee Timesheet</a>
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="employee-display">
+                    <div class="card border-dark mb-3 mt-10" style="max-width: 68rem;">
+                        <div class="card-header">Header</div>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th class="card-text" scope="col">#</th>
+                                    <th class="card-text" id="name" scope="col">Name</th>
+                                    <th class="card-text" id="role" scope="col">Role</th>
+                                    <th class="card-text" id="startDate" scope="col">Start Date</th>
+                                    <th class="card-text" id="monthsWorked" scope="col">Months Worked</th>
+                                    <th class="card-text" id="monthlyRate" scope="col">Monthly Rate ($)</th>
+                                    <th class="card-text" id="totalBilled" scope="col">Total Billed ($)</th>
+                                </tr>
+                                </thead>
+
+                                <!-- <div class="card-body text-dark"> -->
+
+                                <tbody>
+                                    <tr>
+                                        <th class="number" scope="row">#</th>
+                                        <td class="name">NAME</td>
+                                        <td class="role">ROLE</td>
+                                        <td class="startDate">START DATE</td>
+                                        <td class="monthsWorked">MONTHS WORKED</td>
+                                        <td class="monthlyRate">MONTHLY RATE</td>
+                                        <td class="totalBilled">TOTAL BILLED</td>
+                                    </tr>
+                                </tbody>
+                                <!-- </div> -->
+
+                                </table>
+                                
+                            
+
+            </div>
+        </div>
+
+        <div class="container mt-3">
+            <div class="card border-dark mb-3" style="max-width: 68rem;">
+                <div class="card-header" id="card-text">Employee Information</div>
+                <form class="p-3">
+                    <div class="form-group">
+                        <label class="card-text" for="employeeName">Employee Name</label>
+                        <input type="name" class="form-control" id="employeeName" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label class="card-text" for="employeeRole">Role</label>
+                        <input type="role" class="form-control" id="employeeRole" placeholder="Role">
+                    </div>
+                    <div class="form-group">
+                        <label class="card-text" for="startDate">Start Date</label>
+                        <input type="startDate" class="form-control" id="startDate" placeholder="Start Date">
+                    </div>
+                    <div class="form-group">
+                        <label class="card-text" for="monthlyRate">Role</label>
+                        <input type="montlyRate" class="form-control" id="montlyRate" placeholder="Monthly Rate">
+                    </div>
+                    
+                    <button type="submit" id="button" class="btn btn-dark">Submit</button>
+                </form>
+            </div>
+        </div>
+
+
+    </body>
+</html>
